@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Spooky House?</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+    <header>
+        <h1>A Spooky House?</h1>
+        <h3>by Joel Whyte</h3>
+        <p>Made using HTML, CSS, and Javascript (with some use of jQuery)</p>
+    </header>
+    <pre>P.S: You can hover certain colored words for more insights into things!</pre>
+    <hr />
+    
+    <p>You are inside a relatively spooky house due to a dare you accepted from your friend. You were suppose to stay inside for as long as possible and to explore around the area lest you are called a "chicken".</p>
+    
+    <p>However, you swore you heard a swish of a door to the left of you...</p>
+    
+    <p>Then a loud shutter and rattling inside a cage on the floor in front of you, draped with a thick towel...</p>
+    
+    <p>And finally a squeaky 'erk' of faucets turning from upstairs.</p>
+    
+    <p id="decisions">You weigh your options and decide to:</p>
+    
+    <a href="endings/1.html" target="_self" id="1">Walk back out of the house and be made fun of as a "coward" (but a smart ones at that).</a><span id="a"> !(Sound Warning)!</span>
+   <br />
+    <a href="endings/2.html" target="_self" id="2">Take a peek at the cage and hope the animal inside is being well fed!</a><span id="b"> !(Sound Warning)!</span>
+    <br />
+    <a href="endings/3a.html" target="_self">Go upstairs to see what is happening there.</a>
+    <br />
+    <a href="endings/4.html" target="_self" id="3">Swing towards the left to see who is paying for the house to be slamming doors around.</a><span id="c"> !(Sound Warning)!</span>
+    
+</body>
+<script>
+$(document).ready(function(){
+    $("#1").hover(function(){
+      $("#a").show();
+    },
+    function(){
+      $("#a").hide();
+  });
+    $("#2").hover(function(){
+      $("#b").show();
+    },
+    function(){
+      $("#b").hide();
+  });
+    $("#3").hover(function(){
+      $("#c").show();
+    },
+    function(){
+      $("#c").hide();
+  });  
+});
+</script>
+</html>

@@ -1,0 +1,43 @@
+#a {
+    display: none;
+}
+
+#b {
+    display: none;
+}
+
+#c {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+pre {
+    font-style: bold;
+    font-size: 1.5em;
+}
+
+#decisions {
+    font-style: italic;
+}
+
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}

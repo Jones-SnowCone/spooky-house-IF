@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Spooky House?</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+    <h1>A Spooky House?</h1>
+    <hr />
+    <p>You are still inside the relatively spooky house and already quite spooked indeed. You stayed in as long as you could (over a whole two minutes!) but you probably doubt that is enough time for bragging rights.</p>
+    
+    <p>The door to your right is now ajar with the wind from outside making it move a little, illicting short but annoying squeaks from the <span style="color: brown;">door hinges.</span> <span>(Infact, it feels like all the doors in here are like that. Should have brought some WD-40s).</span></p>
+    
+    <p>The rattling of the cage is still going as well as a long fluffy tail poking out from underneath said towel. Poor thing.</p>
+    
+    <p>The singing started to get louder upstairs as well but it is battling against the running water in terms of which sound has a more dominating presence within the house.</p>
+    
+    <p style="font-style: italic;">You weigh your options and decide to:</p>
+    
+    <a href="endings/1.html" target="_self" id="1">Walk back out of the house and be made fun of as a 'coward'(but a smart ones at that).</a><span id="a">!(Sound Warning)!</span>
+   <br />
+    <a href="endings/2.html" target="_self" id="2">Take a peek at the cage and hope the animal inside is being well fed</a><span id="b">!(Sound Warning)!</span>
+    <br />
+    <p>You saw what was upstairs... or at least heard. Best to take the other options that are close to the front door such as... the front door!</p>
+    <a href="endings/4.html" target="_self" id="3">Swing towards the left to see who is paying for the house to be slamming doors around.</a><span id="c">!(Sound Warning)!</span>
+    
+</body>
+<script>
+$(document).ready(function(){
+    $("#1").hover(function(){
+      $("#a").show();
+    },
+    function(){
+      $("#a").hide();
+  });
+    $("#2").hover(function(){
+      $("#b").show();
+    },
+    function(){
+      $("#b").hide();
+  });
+    $("#3").hover(function(){
+      $("#c").show();
+    },
+    function(){
+      $("#c").hide();
+  });  
+});
+</script>
+</html>
